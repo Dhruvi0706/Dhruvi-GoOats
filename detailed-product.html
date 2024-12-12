@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the delicious and nutritious GoOats products, crafted with wholesome ingredients like maple syrup and brown sugar."
+    />
+    <meta
+      name="keywords"
+      content="GoOats products, oatmeal bites, healthy snacks, maple syrup oatmeal, brown sugar oat balls"
+    />
+    <meta name="author" content="Dhruvi Nandha" />
+    <title>GoOats Products - Maple & Brown Sugar Oatmeal Bites</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1><a href="index.html">GoOats</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="findus.html">Find Us</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="products">
+      <section>
+        <h1>Maple and Sugar Oat Balls</h1>
+        <div class="product-detail">
+          <img
+            src="Maple oat balls.png"
+            alt="Maple and brown sugar oatmeal balls"
+          />
+          <p>
+            Explore our GoOats products crafted with wholesome ingredients like
+            real maple syrup and brown sugar. Perfect for a healthy start to
+            your day, our oatmeal bites deliver taste and nutrition in every
+            bite.
+          </p>
+        </div>
+      </section>
+
+      <section class="product-details">
+        <h2>Sweet and Healthy Meals with a Twist</h2>
+        <p>
+          GoOats oatmeal balls bring a delightful twist to traditional oatmeal
+          by blending the rich flavors of maple syrup and brown sugar. Maple
+          syrup, a natural sweetener rich in antioxidants and minerals like zinc
+          and manganese, adds a unique sweet and woody flavor. Brown sugar
+          provides a caramel-like sweetness that enhances the taste. Together,
+          these ingredients create a harmonious blend that satisfies your
+          cravings and nourishes your body.
+        </p>
+      </section>
+
+      <section class="nutritional-benefits">
+        <h2>Nutritional Benefits of Oats</h2>
+        <p>
+          Oats are a nutritional powerhouse, forming the base of all GoOats
+          products. High in dietary fiber, they support digestive health, help
+          regulate cholesterol levels, and keep you full for longer. Oats are
+          also rich in essential vitamins and minerals, including manganese,
+          phosphorus, magnesium, and iron, all of which contribute to overall
+          health and well-being. Including oats in your diet can provide
+          sustained energy throughout the day.
+        </p>
+      </section>
+
+      <section class="real-ingredients">
+        <h2>Real Ingredients, No Preservatives</h2>
+        <p>
+          At GoOats, we are committed to using only the finest ingredients. Our
+          oat balls are made with real, wholesome ingredients and contain no
+          added preservatives or artificial additives. This ensures every bite
+          is packed with natural flavors and nutrients, making them a healthy
+          and guilt-free snack option.
+        </p>
+      </section>
+
+      <section class="all-ages">
+        <h2>Perfect for All Ages and Lifestyles</h2>
+        <p>
+          Designed to be enjoyed by people of all ages, GoOats oat balls are
+          ideal for busy professionals, students, parents, and seniors. They are
+          convenient and easy to carry, making them perfect for on-the-go
+          snacking, lunchboxes, or as a quick energy boost during the day.
+        </p>
+      </section>
+
+      <section class="versatility">
+        <h2>Versatile and Delicious</h2>
+        <p>
+          GoOats oatmeal balls can be enjoyed in various ways. Eat them straight
+          out of the package as a snack, pair them with yogurt or fresh fruit
+          for a hearty breakfast, or warm them up for a comforting treat. With a
+          range of flavors to choose from, there’s a GoOats option for every
+          taste preference.
+        </p>
+      </section>
+
+      <section class="eco-friendly">
+        <h2>A Snack You Can Feel Good About</h2>
+        <p>
+          Choosing GoOats means choosing a product that is both good for you and
+          the environment. Our commitment to sustainability ensures eco-friendly
+          packaging, while our use of real ingredients supports responsible
+          sourcing practices. Enjoy a snack that nourishes you and helps protect
+          the planet.
+        </p>
+      </section>
+
+      <section class="community">
+        <h2>Join the GoOats Community</h2>
+        <p>
+          Follow us on social media for updates, recipes, and tips on how to
+          incorporate GoOats into your daily routine. Share your favorite GoOats
+          moments with us and become part of a growing community that values
+          healthy and delicious snacking.
+        </p>
+      </section>
+
+      <section class="add-to-cart">
+        <h2>Order Now</h2>
+        <p>Select your desired quantity and add to cart:</p>
+        <div class="cart-controls">
+          <button onclick="decrementQuantity()" class="cta">-</button>
+          <span id="quantity">1</span>
+          <button onclick="incrementQuantity()" class="cta">+</button>
+        </div>
+        <a href="cart.html" class="cta">Add to Cart</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Dhruvi Nandha - GoOats.</p>
+      <ul class="social-media">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </footer>
+
+    <script>
+      let quantity = 1;
+
+      function incrementQuantity() {
+        quantity++;
+        document.getElementById("quantity").textContent = quantity;
+      }
+
+      function decrementQuantity() {
+        if (quantity > 1) {
+          quantity--;
+          document.getElementById("quantity").textContent = quantity;
+        }
+      }
+    </script>
+  </body>
+</html>
