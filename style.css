@@ -23,6 +23,15 @@ header .logo h1 {
   padding-left: 20px;
 }
 
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: #ffdd59;
+}
+
 nav {
   position: relative;
 }
