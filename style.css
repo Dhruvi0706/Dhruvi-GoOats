@@ -23,12 +23,12 @@ header .logo h1 {
   padding-left: 20px;
 }
 
-.logo a {
+header .logo a {
   color: #fff;
   text-decoration: none;
 }
 
-.logo a:hover {
+header .logo a:hover {
   color: #ffdd59;
 }
 
